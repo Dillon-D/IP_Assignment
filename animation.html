@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Animation</title>
+    <style>
+        img{
+            position: absolute;
+            animation-duration: 3s;
+            animation-name: rotation;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+        @keyframes rotation{
+            from{
+                transform: rotate(0deg);
+                left: 0px;
+            }
+            to{
+                transform: rotate(360deg);
+                left: 60em;
+            }
+        }
+
+    </style>
+</head>
+<body bgcolor="black">
+    <h1 style="text-align: center; color: white;">Animation</h1>
+    <div class="shuriken">
+    <img src="1.jpg" alt="shuriken"></img><br>
+    <h2><a href="transformation.html">Back</a></h2>
+    </div>
+    
+</body>
+</html>

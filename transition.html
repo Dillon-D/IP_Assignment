@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Transition</title>
+    <style>
+        .first{
+            position: relative;
+            display: inline-block;
+            margin: 50px;
+            width: 130px;
+            height: 195px;
+            transition-property: width;
+
+            
+        }
+        .first .back{
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 99;
+            transition-timing-function: linear;
+        }
+        .first:hover .back{
+            display: inline;
+            transition-duration: 2s;
+
+            
+        }
+    </style>
+</head>
+<body bgcolor="black">
+    <center>
+    <div class="first">
+        <h1 style="color: white;">Transition</h1>
+        <img src="f.jpg" width="130px" alt="f">;
+        <img src="b.jpg" width="130px" style="padding-top: 84px;" class="back" alt="b">
+
+    </div><br><br>
+    <h2><a href="animation.html">Next</a></h2>
+    </center>
+
+    
+</body>
+</html>
